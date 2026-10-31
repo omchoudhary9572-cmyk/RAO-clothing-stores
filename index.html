@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURA APPAREL | Modern Streetwear</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">AURA<span>.</span></div>
+    <nav class="nav-links">
+      <a href="#shop">Collection</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="cart-btn" id="cartBtn">
+      Cart (<span id="cartCount">0</span>)
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="tagline">SPRING / SUMMER DROP</p>
+      <h1>Redefining Heavyweight Streetwear.</h1>
+      <p class="subtext">Engineered for comfort, crafted with minimal boxy silhouettes.</p>
+      <a href="#shop" class="cta-btn">Shop The Drop</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="shop-container" id="shop">
+    <div class="section-header">
+      <h2>Featured Essentials</h2>
+      <p>Clean cuts, premium cotton, built to last.</p>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- Products are rendered dynamically via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Slide-out Shopping Cart Drawer -->
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3>Your Bag</h3>
+      <button class="close-btn" id="closeCart">&times;</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Subtotal</span>
+        <span id="cartTotal">₹0.00</span>
+      </div>
+      <button class="checkout-btn" onclick="alert('Order placed successfully (Demo)!')">Proceed to Checkout</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 AURA Apparel Co. Designed for modern living.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
